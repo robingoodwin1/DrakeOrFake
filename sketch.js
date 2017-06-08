@@ -32,7 +32,8 @@ function draw() {
     fill(0, 0, 0);
     text("Welcome to Drake or Fake!", 90, 280);
     textSize(30);
-    text("Press any key to begin.", 240, 320);
+    text("You have 30 seconds to identify as many Drakes or Fakes as possible.", 30, 320)
+    text("Press any key to begin.", 240, 360);
 
   } else if (gameMode == 1) {
     // display game screen
@@ -49,10 +50,10 @@ function draw() {
      // display score screen
     background(200, 50, 50);
     textSize(50);
-    text(score, 120, 120)
+    text("Your score was" score, 120, 120)
     text("Time's out!", 120, 280);
     textSize(30);
-    text("Press the D button to play again.", 200, 315);
+    text("Press the D button to beat your record!", 200, 315);
    } else if (gameMode == 3) {
     // display timeout screen
     background(255);
@@ -62,7 +63,7 @@ function draw() {
     // display youlose screen
     background(200, 50, 50);
     textSize(50);
-    text(score, 120, 120)
+    text("Your score was" score, 120, 120)
     text("Wrong choice! You lose.", 120, 280);
     textSize(30);
     text("Press the D button to play again.", 200, 315);
