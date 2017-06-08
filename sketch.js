@@ -41,6 +41,7 @@ function draw() {
      img = images[DrakeNumber];
      img.resize(0, 400);
      image(img, 40, 40);
+     console.log(DrakeNumber);
      //text(DrakeNumber, 200, 200);
 
    } else if (gameMode == 2) {
@@ -73,7 +74,7 @@ function keyTyped() {
       console.log(DrakeNumber);
       var Drake = "DRAKE!"
       console.log(Drake)
-       if (DrakeNumber >= 12) {
+       if (DrakeNumber <= 12) {
          score = score + 1;
          console.log("CORRECT SELECTION!");
          gameMode = 1;
@@ -88,7 +89,7 @@ function keyTyped() {
         console.log(DrakeNumber)
         var Drake = "FAKE!"
         console.log(Drake)
-      if (DrakeNumber < 12) {
+      if (DrakeNumber > 12) {
          score = score + 1;
          console.log("CORRECT SELECTION!");
          gameMode = 1;
