@@ -40,7 +40,7 @@ function draw() {
      DrakeNumber = parseInt(random(1, 21));
      img = images[DrakeNumber];
      img.resize(0, 400);
-     image(img, 40, 40);
+     image(img, ((width/2) - (img.width/2)), 40);
      console.log(DrakeNumber);
      //text(DrakeNumber, 200, 200);
 
