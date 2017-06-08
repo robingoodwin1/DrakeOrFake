@@ -29,7 +29,7 @@ function draw() {
        gameMode = 2;
      }, 60000);
      DrakeNumber = parseInt(random(1, 21));
-     var img = loadImage(DrakeNumber + ".jpeg");
+     var img = loadImage(DrakeNumber + ".jpg");
      image(img, 40, 40);
      text(DrakeNumber, 200, 200);
 
