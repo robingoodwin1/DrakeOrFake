@@ -48,7 +48,7 @@ function draw() {
     textSize(50);
     text("Wrong choice! You lose.", 120, 280);
     textSize(30);
-    text("Press a button to play again.", 200, 315);
+    text("Press the D button to play again.", 200, 315);
       }
     }
 
@@ -94,7 +94,7 @@ function keyTyped() {
     }
   } else if (gameMode == 4) {
     //keys to listen for in youlose screen
-    if (key == 'a') {
+    if (key == 'd') {
       console.log("restarting");
       gameMode = 0;
       redraw();
