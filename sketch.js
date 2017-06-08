@@ -29,7 +29,7 @@ function draw() {
        gameMode = 2;
      }, 60000);
      DrakeNumber = parseInt(random(1, 21));
-     var img = loadImage(DrakeNumber + ".jpg");
+     var img = loadImage(DrakeNumber + ".jpeg");
      image(img, 40, 40);
      text(DrakeNumber, 200, 200);
 
@@ -41,13 +41,14 @@ function draw() {
     // display timeout screen
     background(255);
     text("T to the I to the M to the E", 10, 100);
-  } else if (gameMode == 4) {
+
+   } else if (gameMode == 4) {
     // display youlose screen
     background(200, 50, 50);
     textSize(50);
     text("Wrong choice! You lose.", 120, 280);
     textSize(30);
-    text("Press the 'a' key to play again.", 200, 315);
+    text("Press a button to play again.", 200, 315);
       }
     }
 
