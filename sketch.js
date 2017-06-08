@@ -17,6 +17,10 @@ function setup() {
   createCanvas(800, 600);
   console.log(images);
   noLoop();
+       setTimeout(function() {
+       gameMode = 2;
+       redraw();
+     }, 5000);
 }
 
 function draw() {
@@ -34,9 +38,6 @@ function draw() {
     // display game screen
     background(225, 0, 0);
     text("score = " + score, 340, 575);
-     setTimeout(function() {
-       gameMode = 2;
-     }, 60000);
      DrakeNumber = parseInt(random(1, 21));
      img = images[DrakeNumber];
      img.resize(0, 400);
