@@ -50,7 +50,7 @@ function draw() {
      // display score screen
     background(200, 50, 50);
     textSize(50);
-    text("Your score was" score, 120, 120);
+    text("Your score was" + score, 120, 120);
     text("Time's out!", 120, 280);
     textSize(30);
     text("Press the D button to beat your record!", 200, 315);
@@ -63,7 +63,7 @@ function draw() {
     // display youlose screen
     background(200, 50, 50);
     textSize(50);
-    text("Your score was" score, 120, 120);
+    text("Your score was" + score, 120, 120);
     text("Wrong choice! You lose.", 120, 280);
     textSize(30);
     text("Press the D button to play again.", 200, 315);
