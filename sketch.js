@@ -20,7 +20,7 @@ function setup() {
        setTimeout(function() {
        gameMode = 2;
        redraw();
-     }, 5000);
+     }, 30000);
 }
 
 function draw() {
@@ -47,8 +47,12 @@ function draw() {
 
    } else if (gameMode == 2) {
      // display score screen
-     background(255);
-     text("what is this screen?", 10, 100);
+    background(200, 50, 50);
+    textSize(50);
+    text(score, 120, 120)
+    text("Time's out!", 120, 280);
+    textSize(30);
+    text("Press the D button to play again.", 200, 315);
    } else if (gameMode == 3) {
     // display timeout screen
     background(255);
@@ -58,6 +62,7 @@ function draw() {
     // display youlose screen
     background(200, 50, 50);
     textSize(50);
+    text(score, 120, 120)
     text("Wrong choice! You lose.", 120, 280);
     textSize(30);
     text("Press the D button to play again.", 200, 315);
