@@ -31,8 +31,9 @@ function draw() {
     textSize(50);
     fill(0, 0, 0);
     text("Welcome to Drake or Fake!", 90, 280);
-    textSize(30);
+    textSize(20);
     text("You have 30 seconds to identify as many Drakes or Fakes as possible.", 30, 320);
+    textSize(30);
     text("Press any key to begin.", 240, 360);
 
   } else if (gameMode == 1) {
